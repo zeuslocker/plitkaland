@@ -114,8 +114,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
 		<!---//End-css-style-switecher----->
+    <script type="text/javascript">
+    var ZCallbackWidgetLinkId  = '28970dcc4b0f3f6ce75e1920ba6930fd';
+    var ZCallbackWidgetDomain  = 'my.zadarma.com';
+    (function(){
+        var lt = document.createElement('script');
+        lt.type ='text/javascript';
+        lt.charset = 'utf-8';
+        lt.async = true;
+        lt.src = 'https://' + ZCallbackWidgetDomain + '/callbackWidget/js/main.min.js?unq='+Math.floor(Math.random(0,1000)*1000);
+        var sc = document.getElementsByTagName('script')[0];
+        if (sc) sc.parentNode.insertBefore(lt, sc);
+        else document.documentElement.firstChild.appendChild(lt);
+    })();
+    </script>
 </head>
 <body>
+  	<!-- fb -->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 	<!-- header-section-starts -->
 	<div class="header" id="home">
 		<div class="container">
@@ -128,7 +153,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<ul>
 						<li><a class="active scroll" href="#home">Головна</a></li>
 						<li><a class="scroll" href="#services">Послуги/Ціни</a></li>
-						<li><a class="scroll" href="#portfolio">Відгуки</a></li>
+            <li><a class="scroll" href="#how_it_work">Як це відбувається</a></li>
+						<li><a class="scroll" href="#fbcomments">Відгуки</a></li>
 						<li><a class="scroll" href="#contact">Контакти</a></li>
 					</ul>
 				</div>
@@ -153,7 +179,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header-info text-center">
 				<h1>Потрібно відчистити плитку?</h1>
 				<p class="secondry-header">Ми подаруємо вашій керамічній плитці друге життя.</p>
-				<a class="scroll" href="#services"><img src="images/go_down.png" alt="" /></a>
 			</div>
 		</div>
 	</div>
@@ -161,7 +186,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- portfolio -->
     <div id="portfolio" class="portfolio">
     	<div class="container">
-    		<div class="portfolio-info">
+    		<div class="portfolio-info" id="services">
     			<h2>Наші послуги</h2>
     			<p></p>
     		</div>
@@ -176,7 +201,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     					</div>
     					<div class="caption">
     						<ul>
-    							<li>Чистка керамічної плитки та швів</li>
+    							<li>Чистка підлоги з керамічної плитки</li><br>
+                  <li class="left"><span>50 UAH/M<sup>2</sup></span></li>
     						</ul>
     					</div>
     				</div>
@@ -184,47 +210,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     			<div class="col-md-4 portfolio-grid">
     				<div class="portfolio-image">
     					<div class="port-img">
-    						<img src="images/gallery-hvylka-61.jpg" alt=" " />
+    						<img src="images/1331536657.jpg" alt=" " />
     					</div>
     					<div class="desc">
     						<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
     					</div>
     					<div class="caption">
     						<ul>
-    							<li>Чистка тротуарної плитки</li>
-    						</ul>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4 portfolio-grid">
-    				<div class="portfolio-image">
-    					<div class="port-img">
-    						<img src="images/eyeem-90480851.jpg" alt=" " />
-    					</div>
-    					<div class="desc">
-    						<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
-    					</div>
-    					<div class="caption">
-    						<ul>
-    							<li>Чистка бруківки</li>
-    						</ul>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="clearfix"> </div>
-    		</div>
-    		<div class="portfolio-grids">
-    			<div class="col-md-4 portfolio-grid">
-    				<div class="portfolio-image">
-    					<div class="port-img">
-    						<img src="images/180.JPG" alt=" " />
-    					</div>
-    					<div class="desc">
-    						<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
-    					</div>
-    					<div class="caption">
-    						<ul>
-    							<li>Чистка декоративного каменю</li>
+    							<li>Чистка стін з керамічної плитки</li><br>
+                  <li class="left"><span><i>60 UAH/M<sup>2</sup></i></span></li>
     						</ul>
     					</div>
     				</div>
@@ -235,11 +229,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     						<img src="images/f3c9b76ca93df8e5dc363bd2884086f8.jpg" alt=" " />
     					</div>
     					<div class="desc">
-    						<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
+    						<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
     					</div>
     					<div class="caption">
     						<ul>
-    							<li>Чистка сходів з керамічної плитки</li>
+    							<li>Чистка сходів з керамічної плитки</li><br>
+                  <li class="left"><span><i>60 UAH/M<sup>2</sup></i></span></li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="clearfix"> </div>
+    		</div>
+    		<div class="portfolio-grids">
+    			<div class="col-md-4 portfolio-grid">
+    				<div class="portfolio-image">
+    					<div class="port-img">
+    						<img src="images/0851.png" alt=" " />
+    					</div>
+    					<div class="desc">
+    						<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
+    					</div>
+    					<div class="caption">
+    						<ul>
+    							<li>Чистка тротуарної  плитки та бруківки</li><br>
+                  <li class="left"><span><i>40 UAH/M<sup>2</sup></i></span></li>
     						</ul>
     					</div>
     				</div>
@@ -250,11 +264,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     						<img src="images/Oblicovka-fasadov-6-1024x768.jpg" alt=" " />
     					</div>
     					<div class="desc">
+    						<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
+    					</div>
+    					<div class="caption">
+    						<ul>
+    							<li>Чистка фасадів та парканів з облицювальної цегли, плитки та каменю</li><br>
+                  <li class="left"><span><i>50 UAH/M<sup>2</sup></i></span></li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 portfolio-grid">
+    				<div class="portfolio-image">
+    					<div class="port-img">
+    						<img src="images/gggrtrt.jpg" alt=" " />
+    					</div>
+    					<div class="desc">
     						<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">Детальніше</a>
     					</div>
     					<div class="caption">
     						<ul>
-    							<li>Чистка фасадів та парканів</li>
+    							<li>Чистка промислових наливних підлог та підлог з мармурової крихти</li><br>
+                  <li class="left"><span><i>За домовленістю</i></span></li>
     						</ul>
     					</div>
     				</div>
@@ -270,37 +301,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     					<div id="small-dialog" class="mfp-hide">
     						<div class="image-top">
     							<img src="images/plitka-black-pol-02.jpg" alt="" />
-    							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+    							<p>З часом, підлоги і поверхні з керамічної плитки втрачають свій блиск і вигляд. Бруд, і розливи рідин створюють знаки і плями на керамічній плитці та швах , і це робить всю підлогу на вигляд брудною і непривабливою. Миття і протирання, як правило, не дають результатів, необхідних для глибокого очищення. Оскільки цементний розчин є пористим і поглинає весь бруд і сміття на собі, просте миття видаляє тільки поверхневе забруднення, що призводить до потемніння та втрати кольорів на швах (фузі) і керамічній плитці. Це не тільки призводить до неприємних запахів і потенційному поширенню інфекцій, але без регулярного очищення керамічну плитку та шви між нею стає все більш і більш важко чистити. Ми допоможемо Вам відновити плитку та шви між нею, і повернути в  приміщення новий, чистий вигляд та свіжість.</p>
     						</div>
     					</div>
     					<div id="small-dialog1" class="mfp-hide">
     						<div class="image-top">
-    							<img src="images/gallery-hvylka-61.jpg" alt="" />
-    							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+    							<img src="images/1331536657.jpg" alt="" />
+    							<p>Керамічна плитка є прекрасним доповненням до будь-якого дому і приміщення. Затирка швів плитки відповідно до ваших уподобань, або контрастними кольорами є відмінним способом, щоб додати дизайн і творчість в приміщення . Але якщо плитка і шви між нею не належним чином очищені, вони можуть стати брудними і прекрасні кольори можуть виглядати не привабливо. Цементний розчин є пористим і легко вбирає жир, бруд, накип, утворюється цвіль і це може погано позначитися на вашому здоров'ї  і стати живильним середовищем для бактерій. Якщо ви стурбовані цим, ми швидко та якісно очистимо вашу керамічну плитку. Пропонуємо професійні послуги з чищення стін та підлоги з керамічної плитки , а саме в душових кімнатах, туалетах, кухнях, басейнах, саунах, виробничих приміщеннях та медичних закладах.</p>
     						</div>
     					</div>
     					<div id="small-dialog2" class="mfp-hide">
     						<div class="image-top">
-    							<img src="images/eyeem-90480851.jpg" alt="" />
-    							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+    							<img src="images/f3c9b76ca93df8e5dc363bd2884086f8.jpg" alt="" />
+    							<p>Бруд, і розливи рідин створюють знаки і плями на сходах з керамічної плитки , а з часом це робить сходи на вигляд брудними і непривабливими. Цементний розчин на швах між керамічною плиткою є пористим і легко вбирає жир, бруд.  Не чисті сходи можуть також призвести до появи бактерій, що робить антисанітарні умови для життя або робочого простору.</p>
     						</div>
     					</div>
     					<div id="small-dialog3" class="mfp-hide">
     						<div class="image-top">
-    							<img src="images/180.JPG" alt="" />
-    							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+    							<img src="images/0851.png" alt="" />
+    							<p>Іноді буває досить просто підмести з неї сміття, наприклад, опале листя або помити бруківку з шлангу. Але бувають такі випадки, коли просто миттям обійтися не вийде.  До таких ситуацій  можна віднести такі, як забруднення отримані від машинного масла, сліди шин, та ін.  Також з часом, на швах між тротуарною плиткою та бруківкою виростає мох та трава. Якісно та швидко очистити тротуарну плитку та бруківку можна за допомогою нашого обладнання.</p>
     						</div>
     					</div>
     					<div id="small-dialog4" class="mfp-hide">
     						<div class="image-top">
-    							<img src="images/f3c9b76ca93df8e5dc363bd2884086f8.jpg" alt="" />
-    							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+    							<img src="images/Oblicovka-fasadov-6-1024x768.jpg" alt="" />
+    							<p>Наше обладнання дозволяє швидко та якісно очистити фасад або паркан від бруду та почорнінь.</p>
     						</div>
     					</div>
     					<div id="small-dialog5" class="mfp-hide">
     						<div class="image-top">
-    							<img src="images/Oblicovka-fasadov-6-1024x768.jpg" alt="" />
-    							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+    							<img src="images/gggrtrt.jpg" alt="" />
+    							<p>Чистка промислових наливних підлог та з мармурової крихти. За домовленістю.</p>
     						</div>
     					</div>
     			<script>
@@ -322,17 +353,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     		<!-- //pop-up-box -->
     	</div>
     </div>
+    <div class="how_it_work" id="how_it_work">
+      <div class="row portfolio-info how_it_work">
+        <h2 class="mg-l-20">Як це відбувається</h2>
+      </div>
+      <div class="row mg-l-r-10">
+        <div class="col-sm-6">
+          <h3 class="text-center video-header">Чистка підлоги</h3>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/vdOZp2WEozE?ecver=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-6">
+          <h3 class="text-center video-header">Чистка стін</h3>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/KKSkfoRCQeg?ecver=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+            <div class="row mg-l-r-10">
+        <div class="row portfolio-info how_it_work">
+          <h2 class="mg-l-20">Чистка здійснюється за допомогою високого тиску води та вакууму, обладнанням американського виробника.</h2>
+        </div>
+      </div>
+    </div>
     <div class="contact-form">
-+					<div class="container">
-    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="4"></div>
+					<div class="container" id="fbcomments">
+<div class="fb-comments" data-href="http://localhost:3000/" data-width="100%" data-numposts="3"></div>
         </div>
   </div>
 		</div>
-		<div class="footer">
+		<div class="footer" id="contact">
 			<div class="footer-top">
 				<div class="container">
 					<div class="col-md-3 footer-grid">
-						<h4>Наші контакти</h4>
+						<h4 class="footer-contacts">Наші контакти</h4>
 						<ul class="address">
 							<li><i class="f_phone"></i></li>
 							<li>+380676720545</li>
@@ -346,6 +397,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="yaremalev@ukr.net"> yaremalev@ukr.net</a></li>
 						</ul>
 					</div>
+          <div class="col-sm-9 contact-form">
+						<form>
+							<input class="text" placeholder="Імя" type="text">
+							<input class="text" placeholder="E-Mail" type="text">
+							<textarea placeholder="Ваше повідомлення"></textarea>
+							<input value="Відправити" type="submit">
+						</form>
+				</div>
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -366,13 +425,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								scrollSpeed: 1200,
 								easingType: 'linear'
 					 		};
-							*/
+
 
 							$().UItoTop({ easingType: 'easeOutQuart' });
-
+              */
 						});
 					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
-</body>
+</body
 </html>

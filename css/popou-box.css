@@ -222,10 +222,17 @@ button::-moz-focus-inner {
 .image-top img{
 	width:100%;
 }
+.mg-l-20{
+	margin-left: 20px !important;
+	margin-bottom: 30px !important;
+}
 .image-top p{
 	text-align: justify;
 	padding:2% 0;
-	color:#a8a8a8;
+	color:#000000;
+}
+.video-header{
+	font-family: sans-serif;
 }
 .mfp-close-btn-in .mfp-close{
 	color:#000;
@@ -240,7 +247,6 @@ button::-moz-focus-inner {
 		max-width: 400px;
 	}
 	.image-top p {
-		height: 8em;
 		overflow: hidden;
 	}
 	}
@@ -249,7 +255,6 @@ button::-moz-focus-inner {
 		max-width: 350px;
 	}
 	.image-top p {
-		height: 6.2em;
 		overflow: hidden;
 	}
 	.mfp-close {
